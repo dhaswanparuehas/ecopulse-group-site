@@ -1,14 +1,13 @@
+import Image from "next/image";
+
 const Arrow = () => (
   <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
     <path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
-const PulseMark = () => (
-  <svg aria-hidden="true" className="pulse-mark" viewBox="0 0 44 44" fill="none">
-    <path d="M3 22h9l4.5-10 7.2 20L29 17l3.5 5H41" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    <circle cx="22" cy="22" r="19" stroke="currentColor" strokeOpacity=".22" />
-  </svg>
+const BrandMark = () => (
+  <Image aria-hidden="true" className="brand-mark" src="/ecopulse-mark.png" alt="" width={512} height={512} priority />
 );
 
 const industries = [
@@ -29,7 +28,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Ecopulse home"><PulseMark /><span>ECOPULSE</span></a>
+        <a className="brand" href="#top" aria-label="Ecopulse Technology home"><BrandMark /><span className="brand-wordmark"><strong>Ecopulse</strong><small>TECHNOLOGY</small></span></a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="#platform">Platform</a><a href="#technology">Technology</a><a href="#applications">Applications</a><a href="#delivery">Delivery</a>
         </nav>
@@ -149,7 +148,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <div className="footer-brand"><PulseMark /><strong>ECOPULSE</strong><span>Cooling resilience infrastructure.</span></div>
+        <div className="footer-brand"><BrandMark /><span className="brand-wordmark"><strong>Ecopulse</strong><small>TECHNOLOGY</small></span><span className="brand-tagline">The Pulse of Clean Power.</span></div>
         <div className="footer-links"><div><span>EXPLORE</span><a href="#platform">Platform</a><a href="#technology">Technology</a><a href="#applications">Applications</a></div><div><span>CONNECT</span><a href="https://ecopulsegroup.com/contact" target="_blank" rel="noreferrer">Business enquiries</a><a href="https://ecopulsegroup.com/investors" target="_blank" rel="noreferrer">Investor relations</a><a href="https://pcm-tes.com/boca/" target="_blank" rel="noreferrer">BOCA International</a></div></div>
         <div className="footer-bottom"><span>© 2026 ECOPULSE. ALL RIGHTS RESERVED.</span><span>THAILAND · SOUTHEAST ASIA</span></div>
       </footer>
