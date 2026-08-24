@@ -3,8 +3,11 @@ import "./globals.css";
 
 const [githubOwner, githubRepository] = (process.env.GITHUB_REPOSITORY ?? "").split("/");
 const isGitHubPages = process.env.GITHUB_PAGES === "true" && Boolean(githubOwner && githubRepository);
-const basePath = isGitHubPages ? `/${githubRepository}` : "";
-const siteUrl = isGitHubPages
+const customDomain = process.env.CUSTOM_DOMAIN?.trim() ?? "";
+const basePath = isGitHubPages && !customDomain ? `/${githubRepository}` : "";
+const siteUrl = customDomain
+  ? `https://${customDomain}`
+  : isGitHubPages
   ? `https://${githubOwner}.github.io/${githubRepository}`
   : "https://ecopulsegroup.com";
 
