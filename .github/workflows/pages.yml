@@ -14,9 +14,6 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
-env:
-  CUSTOM_DOMAIN: ecopulsegroup.com
-
 jobs:
   build:
     runs-on: ubuntu-latest
