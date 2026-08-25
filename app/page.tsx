@@ -17,11 +17,12 @@ const BrandMark = () => (
 
 const copy = {
   en: {
-    nav: ["Platform", "PCM-TES", "Applications", "Delivery"],
+    nav: ["PCM-TES", "AI Intelligence", "Applications", "Delivery"],
     contact: "Start a conversation",
     eyebrow: "THAILAND · ASEAN · THERMAL INFRASTRUCTURE",
     heroTitle: <>Cooling resilience<br />for a <em>volatile</em><br />energy world.</>,
-    heroLead: "Ecopulse develops PCM-based thermal energy infrastructure that helps mission-critical buildings manage peak demand, grid stress and operational uncertainty.",
+    heroLead: "Ecopulse combines PCM-based thermal storage with AI-assisted control to help mission-critical buildings manage peak demand, grid stress and operational uncertainty.",
+    heroAI: ["AI-ASSISTED THERMAL CONTROL", "Sense demand · Predict load · Optimise · Dispatch"],
     explore: "Understand PCM-TES",
     investors: "Investor relations",
     visual: [["01", "STORE", "available thermal energy"], ["02", "BALANCE", "plant and demand"], ["03", "DISPATCH", "cooling when needed"]],
@@ -41,13 +42,26 @@ const copy = {
       caption: "PCM panels shown beside a thermal energy storage tank. Image supplied by Ecopulse.",
       source: "Technology explanation adapted from BOCA PCM-TES",
     },
+    ai: {
+      kicker: "02 — THE INTELLIGENCE LAYER",
+      headline: <>Cold is stored.<br /><em>Intelligence decides when to use it.</em></>,
+      intro: "PCM-TES provides the physical capacity to store cooling. The intelligent control layer turns that capacity into an operating strategy—using live system data to support when cooling should be produced, stored and dispatched.",
+      loop: [["01", "SENSE", "Temperatures, flow, pressure, equipment status, building load and ambient conditions."], ["02", "PREDICT", "Use current and historical data to anticipate cooling demand and operating conditions."], ["03", "OPTIMISE", "Support equipment sequencing, setpoints and the most appropriate PCM charge window."], ["04", "DISPATCH", "Coordinate the production, storage and release of cooling as demand changes."], ["05", "LEARN", "Refine recommendations as site data, equipment condition and operating patterns evolve."]],
+      console: "BOCASMART A.I. CONTROL CONCEPT",
+      consoleTitle: "Rules + machine learning",
+      consoleCopy: "BOCA describes a hybrid approach that combines expert operating rules with machine learning. Sensor data feeds a central control console that may operate independently or integrate with the client’s Building Management System (BMS).",
+      signals: ["LIVE SENSOR DATA", "LOAD FORECAST", "PCM STATE", "CHILLER SEQUENCE", "BMS INTEGRATION"],
+      statement: "PCM-TES stores the energy. AI orchestrates the system. Ecopulse delivers the operating intelligence.",
+      note: "BocaSmart A.I. is described by BOCA as an evolving technology platform. Final control scope, automation level, integrations and performance outcomes must be confirmed for each project; no standalone AI savings outcome is represented here.",
+      source: "Explore BocaSmart A.I.",
+    },
     platform: {
-      kicker: "02 — THE PLATFORM", title: <>Cooling is no longer<br />a utility expense.</>, big: "It is an infrastructure decision.",
+      kicker: "03 — THE PLATFORM", title: <>Cooling is no longer<br />a utility expense.</>, big: "It is an infrastructure decision.",
       copy: "Electrification, climate volatility and always-on operations are making cooling a strategic constraint. Ecopulse reframes thermal storage as an operating asset—built around resilience, controllability and verifiable performance.",
       risks: [["01", "Peak exposure", "Cooling demand often rises when electricity systems are under the most pressure."], ["02", "Energy volatility", "Tariffs, grid congestion and intermittent generation make timing as important as consumption."], ["03", "Resilience gap", "Mission-critical facilities need thermal continuity—not simply more installed cooling capacity."]],
     },
     technology: {
-      kicker: "03 — HOW IT WORKS", title: <>A thermal battery<br />for the built world.</>,
+      kicker: "04 — HOW IT WORKS", title: <>A thermal battery<br />for the built world.</>,
       copy: "Phase Change Material stores and releases thermal energy at a defined temperature. Integrated with a central chiller plant, it creates a controllable buffer between cooling production and cooling demand.",
       processes: [["01 / CHARGE", "Store thermal energy", "Capture available cooling capacity when plant conditions and energy timing are more favourable."], ["02 / OPTIMISE", "Balance the system", "Coordinate chiller output, storage state and real-time load through the system control layer."], ["03 / DISCHARGE", "Release on demand", "Dispatch stored cooling during peak periods, load spikes or resilience events."]],
       band: "BOCA PCM-TES TECHNOLOGY", bandTitle: <>Proven technology layer.<br />Local execution intelligence.</>,
@@ -55,20 +69,20 @@ const copy = {
       note: "Technology specifications shown are published by BOCA International / Green Circle Decarbonize Technology and are subject to project engineering and product selection.",
     },
     applications: {
-      kicker: "04 — APPLICATIONS", title: <>Where cooling<br />becomes critical.</>, copy: "Built for energy-intensive environments where reliability, peak management and expansion capacity have direct operational value.", discuss: "Discuss application",
+      kicker: "05 — APPLICATIONS", title: <>Where cooling<br />becomes critical.</>, copy: "Built for energy-intensive environments where reliability, peak management and expansion capacity have direct operational value.", discuss: "Discuss application",
       items: [["01", "Data Centres", "Thermal buffering and uninterrupted cooling architecture for facilities where every minute matters.", "Mission critical"], ["02", "Healthcare & Life Sciences", "More resilient cooling for hospitals, laboratories and temperature-sensitive operations.", "Continuity"], ["03", "Commercial Campuses", "Peak-load management for large buildings, mixed-use estates and high-density urban assets.", "Portfolio scale"], ["04", "Industry & Infrastructure", "Modular thermal storage for facilities balancing production loads, grid constraints and expansion.", "Operational control"]],
     },
     architecture: {
-      kicker: "05 — PLATFORM ARCHITECTURE", title: <>Global technology.<br /><em>Thailand execution.</em></>,
-      copy: "BOCA provides the proven PCM-TES technology layer. Ecopulse builds the Thailand and ASEAN execution layer around it—from local customer conversion and technical localisation to commercial structuring, performance measurement and lifecycle operations.", link: "Explore BOCA technology",
-      labels: ["TECHNOLOGY LAYER", "PCM · SYSTEM DESIGN · CONTROL", "INTEGRATED DELIVERY", "EXECUTION LAYER", "THAILAND · ASEAN"], chips: ["LOCALISATION", "STRUCTURING", "MRV", "O&M"],
+      kicker: "06 — PLATFORM ARCHITECTURE", title: <>Global technology.<br /><em>Thailand execution.</em></>,
+      copy: "BOCA provides the PCM-TES and BocaSmart A.I. technology layer. Ecopulse builds the Thailand and ASEAN execution layer around it—from technical localisation and controls integration to commercial structuring, performance measurement and lifecycle operations.", link: "Explore BOCA technology",
+      labels: ["TECHNOLOGY LAYER", "PCM · SYSTEM DESIGN · BOCASMART A.I.", "INTEGRATED DELIVERY", "EXECUTION LAYER", "THAILAND · ASEAN"], chips: ["LOCALISATION", "AI / BMS INTEGRATION", "MRV", "O&M"],
     },
     delivery: {
-      kicker: "06 — DELIVERY", title: <>From site reality<br />to operating asset.</>, copy: "Every deployment begins with the load—not a generic savings promise. Technical and commercial decisions are anchored to site data and an agreed measurement framework.",
+      kicker: "07 — DELIVERY", title: <>From site reality<br />to operating asset.</>, copy: "Every deployment begins with the load—not a generic savings promise. Technical and commercial decisions are anchored to site data and an agreed measurement framework.",
       items: [["01", "Diagnose", "Map the cooling load, operating profile, tariff exposure and resilience requirement."], ["02", "Engineer", "Configure the storage architecture with BOCA PCM-TES technology and site-specific controls."], ["03", "Structure", "Align engineering scope, commercial model, measurement plan and delivery responsibilities."], ["04", "Operate", "Track performance through disciplined monitoring, verification and lifecycle support."]],
     },
     references: {
-      kicker: "07 — TECHNOLOGY REFERENCES", title: <>A foundation built<br />beyond the laboratory.</>, copy: "BOCA’s public project portfolio shows PCM-TES applied across cooling resilience, energy management and thermal storage use cases.",
+      kicker: "08 — TECHNOLOGY REFERENCES", title: <>A foundation built<br />beyond the laboratory.</>, copy: "BOCA’s public project portfolio shows PCM-TES applied across cooling resilience, energy management and thermal storage use cases.",
       items: [["HONG KONG", "IBM Data Centre", "130 RT-hr uninterrupted cooling supply", "https://pcm-tes.com/ibm-2/"], ["ITALY", "Turin Geothermal TES", "Cooling and heating energy storage", "https://pcm-tes.com/italy/"], ["HONG KONG", "HAECO Chiller Plant", "Published BOCA reference project", "https://pcm-tes.com/most-energy-efficient-hvac-system-2/"]],
       note: "Reference projects are attributed to BOCA International and do not represent Ecopulse deployments. Performance varies by site and must be established through project-specific engineering, baselining and measurement & verification.",
     },
@@ -76,9 +90,10 @@ const copy = {
     footer: { explore: "EXPLORE", connect: "CONNECT", business: "Business enquiries", investor: "Investor relations" },
   },
   th: {
-    nav: ["แพลตฟอร์ม", "PCM-TES", "การใช้งาน", "การส่งมอบ"], contact: "เริ่มต้นพูดคุย", eyebrow: "ประเทศไทย · อาเซียน · โครงสร้างพื้นฐานพลังงานความร้อน",
+    nav: ["PCM-TES", "ระบบ AI", "การใช้งาน", "การส่งมอบ"], contact: "เริ่มต้นพูดคุย", eyebrow: "ประเทศไทย · อาเซียน · โครงสร้างพื้นฐานพลังงานความร้อน",
     heroTitle: <>ระบบความเย็นที่มั่นคง<br />สำหรับโลกพลังงาน<br /><em>ที่ผันผวน</em></>,
-    heroLead: "Ecopulse พัฒนาโครงสร้างพื้นฐานพลังงานความร้อนด้วย PCM เพื่อช่วยอาคารและกิจการที่หยุดไม่ได้ รับมือช่วงพีก ความตึงตัวของระบบไฟฟ้า และความไม่แน่นอนในการดำเนินงาน",
+    heroLead: "Ecopulse ผสานระบบกักเก็บพลังงานความร้อนด้วย PCM เข้ากับระบบควบคุมที่สนับสนุนด้วย AI เพื่อช่วยอาคารและกิจการที่หยุดไม่ได้ รับมือช่วงพีก ความตึงตัวของระบบไฟฟ้า และความไม่แน่นอนในการดำเนินงาน",
+    heroAI: ["ระบบควบคุมพลังงานความร้อนที่สนับสนุนด้วย AI", "รับรู้โหลด · คาดการณ์ · ปรับให้เหมาะสม · สั่งจ่าย"],
     explore: "รู้จัก PCM-TES", investors: "ข้อมูลสำหรับนักลงทุน",
     visual: [["01", "เก็บ", "พลังงานความเย็นไว้ล่วงหน้า"], ["02", "สมดุล", "กำลังผลิตกับความต้องการ"], ["03", "จ่าย", "ความเย็นเมื่อจำเป็น"]], scroll: "เลื่อนเพื่อดูเพิ่มเติม", backbone: "เทคโนโลยีหลัก",
     bocaCopy: <>เทคโนโลยีกักเก็บพลังงานด้วยวัสดุเปลี่ยนสถานะ<br />และความเชี่ยวชาญด้านวิศวกรรมความร้อน</>,
@@ -92,33 +107,46 @@ const copy = {
       calloutCopy: "BOCA ระบุว่า PCM สำหรับระบบความเย็นสามารถแข็งตัวที่ประมาณ 8°C โดยไม่ต้องทำให้น้ำกลายเป็นน้ำแข็งที่ 0°C จึงสามารถกักเก็บพลังงานใกล้เคียงช่วงอุณหภูมิทำงานปกติของระบบน้ำเย็น ทั้งนี้ขึ้นอยู่กับการออกแบบโครงการและการเลือกผลิตภัณฑ์",
       caption: "แผง PCM ข้างถังกักเก็บพลังงานความร้อน ภาพประกอบจาก Ecopulse", source: "เรียบเรียงคำอธิบายจาก BOCA PCM-TES",
     },
+    ai: {
+      kicker: "02 — ชั้นระบบอัจฉริยะ",
+      headline: <>ความเย็นถูกเก็บไว้<br /><em>ระบบอัจฉริยะช่วยตัดสินใจว่าจะใช้เมื่อใด</em></>,
+      intro: "PCM-TES ทำหน้าที่เป็นโครงสร้างกายภาพสำหรับกักเก็บความเย็น ส่วนระบบควบคุมอัจฉริยะเปลี่ยนความจุนั้นให้เป็นกลยุทธ์การเดินระบบ โดยใช้ข้อมูลจริงเพื่อสนับสนุนการตัดสินใจว่า ควรผลิต เก็บ หรือปล่อยความเย็นเมื่อใด",
+      loop: [["01", "รับรู้", "อุณหภูมิ อัตราการไหล แรงดัน สถานะอุปกรณ์ โหลดอาคาร และสภาพแวดล้อม"], ["02", "คาดการณ์", "ใช้ข้อมูลปัจจุบันและข้อมูลย้อนหลังเพื่อคาดการณ์ความต้องการความเย็นและสภาวะเดินระบบ"], ["03", "ปรับให้เหมาะสม", "สนับสนุนการจัดลำดับเครื่องจักร ค่าเป้าหมาย และช่วงเวลาที่เหมาะสมในการชาร์จ PCM"], ["04", "สั่งจ่าย", "ประสานการผลิต การกักเก็บ และการปล่อยความเย็นตามโหลดที่เปลี่ยนแปลง"], ["05", "เรียนรู้", "ปรับคำแนะนำตามข้อมูลหน้างาน สภาพอุปกรณ์ และรูปแบบการเดินระบบที่เปลี่ยนไป"]],
+      console: "แนวคิดระบบควบคุม BOCASMART A.I.",
+      consoleTitle: "กฎจากผู้เชี่ยวชาญ + Machine Learning",
+      consoleCopy: "BOCA อธิบายแนวทางแบบผสมผสานระหว่างกฎการเดินระบบจากผู้เชี่ยวชาญกับ Machine Learning โดยข้อมูลเซนเซอร์จะถูกส่งเข้าสู่ระบบควบคุมส่วนกลาง ซึ่งสามารถติดตั้งแยกหรือเชื่อมต่อกับระบบบริหารอาคารของลูกค้า (BMS)",
+      signals: ["ข้อมูลเซนเซอร์สด", "พยากรณ์โหลด", "สถานะ PCM", "ลำดับชิลเลอร์", "เชื่อมต่อ BMS"],
+      statement: "PCM-TES เก็บพลังงาน — AI ประสานการทำงานของระบบ — Ecopulse ส่งมอบความสามารถในการบริหารการเดินระบบ",
+      note: "BOCA ระบุว่า BocaSmart A.I. เป็นแพลตฟอร์มเทคโนโลยีที่พัฒนาอย่างต่อเนื่อง ขอบเขตการควบคุม ระดับความอัตโนมัติ การเชื่อมต่อ และผลการดำเนินงานต้องยืนยันเป็นรายโครงการ โดยข้อความนี้ไม่ได้รับรองผลประหยัดจาก AI แยกต่างหาก",
+      source: "ดูข้อมูล BocaSmart A.I.",
+    },
     platform: {
-      kicker: "02 — แพลตฟอร์ม", title: <>ระบบความเย็นไม่ใช่<br />แค่ค่าใช้จ่ายสาธารณูปโภค</>, big: "แต่คือการตัดสินใจด้านโครงสร้างพื้นฐาน",
+      kicker: "03 — แพลตฟอร์ม", title: <>ระบบความเย็นไม่ใช่<br />แค่ค่าใช้จ่ายสาธารณูปโภค</>, big: "แต่คือการตัดสินใจด้านโครงสร้างพื้นฐาน",
       copy: "การใช้ไฟฟ้าที่เพิ่มขึ้น ความผันผวนของสภาพภูมิอากาศ และการดำเนินงานตลอด 24 ชั่วโมง ทำให้ระบบความเย็นกลายเป็นข้อจำกัดเชิงกลยุทธ์ Ecopulse จึงออกแบบการกักเก็บพลังงานความร้อนให้เป็นสินทรัพย์ปฏิบัติการที่ควบคุมได้ มีความมั่นคง และวัดผลได้",
       risks: [["01", "ความเสี่ยงช่วงพีก", "ความต้องการความเย็นมักเพิ่มขึ้นในช่วงเดียวกับที่ระบบไฟฟ้ารับภาระสูงที่สุด"], ["02", "ความผันผวนด้านพลังงาน", "ค่าไฟ ความแออัดของโครงข่าย และพลังงานหมุนเวียน ทำให้ ‘เวลาใช้พลังงาน’ สำคัญไม่แพ้ปริมาณ"], ["03", "ช่องว่างด้านความต่อเนื่อง", "สถานที่สำคัญต้องการความเย็นที่ต่อเนื่อง ไม่ใช่เพียงเพิ่มขนาดเครื่องทำความเย็น"]],
     },
     technology: {
-      kicker: "03 — หลักการทำงาน", title: <>แบตเตอรี่พลังงานความร้อน<br />สำหรับโลกกายภาพ</>, copy: "วัสดุเปลี่ยนสถานะจะรับและปล่อยพลังงานความร้อน ณ อุณหภูมิที่กำหนด เมื่อนำมาทำงานร่วมกับระบบชิลเลอร์ส่วนกลาง จะเกิดเป็นตัวกลางที่ควบคุมได้ระหว่างการผลิตและการใช้ความเย็น",
+      kicker: "04 — หลักการทำงาน", title: <>แบตเตอรี่พลังงานความร้อน<br />สำหรับโลกกายภาพ</>, copy: "วัสดุเปลี่ยนสถานะจะรับและปล่อยพลังงานความร้อน ณ อุณหภูมิที่กำหนด เมื่อนำมาทำงานร่วมกับระบบชิลเลอร์ส่วนกลาง จะเกิดเป็นตัวกลางที่ควบคุมได้ระหว่างการผลิตและการใช้ความเย็น",
       processes: [["01 / ชาร์จ", "เก็บพลังงานความเย็น", "ใช้กำลังความเย็นที่มีอยู่ในช่วงที่สภาวะการเดินเครื่องและเวลาการใช้พลังงานเหมาะสมกว่า"], ["02 / ปรับสมดุล", "บริหารทั้งระบบ", "ประสานการทำงานของชิลเลอร์ สถานะพลังงานในถัง และโหลดแบบเรียลไทม์ผ่านระบบควบคุม"], ["03 / ปล่อย", "จ่ายตามความต้องการ", "นำความเย็นที่เก็บไว้ออกใช้ในช่วงพีก เมื่อโหลดพุ่งสูง หรือเมื่อจำเป็นต้องรักษาความต่อเนื่อง"]],
       band: "เทคโนโลยี BOCA PCM-TES", bandTitle: <>เทคโนโลยีที่ผ่านการใช้งานจริง<br />ผสานความสามารถในการดำเนินการในพื้นที่</>,
       facts: [["20+", "สูตร PCM ที่ผู้ให้บริการเทคโนโลยีพัฒนาขึ้น"], ["−86°—600°C", "ช่วงอุณหภูมิที่เผยแพร่สำหรับกลุ่มผลิตภัณฑ์ PCM ของ BOCA"], ["MODULAR", "สถาปัตยกรรมถังแบบโมดูลาร์ รองรับทั้งอาคารเดิมและอาคารใหม่"]],
       note: "ข้อมูลจำเพาะมาจากข้อมูลเผยแพร่ของ BOCA International / Green Circle Decarbonize Technology และต้องยืนยันตามการออกแบบและผลิตภัณฑ์ที่เลือกสำหรับแต่ละโครงการ",
     },
     applications: {
-      kicker: "04 — การประยุกต์ใช้", title: <>เมื่อระบบความเย็น<br />คือภารกิจสำคัญ</>, copy: "เหมาะกับสถานที่ใช้พลังงานสูง ซึ่งความเชื่อถือได้ การบริหารช่วงพีก และขีดความสามารถในการขยายระบบ มีคุณค่าต่อการดำเนินงานโดยตรง", discuss: "ปรึกษาการประยุกต์ใช้",
+      kicker: "05 — การประยุกต์ใช้", title: <>เมื่อระบบความเย็น<br />คือภารกิจสำคัญ</>, copy: "เหมาะกับสถานที่ใช้พลังงานสูง ซึ่งความเชื่อถือได้ การบริหารช่วงพีก และขีดความสามารถในการขยายระบบ มีคุณค่าต่อการดำเนินงานโดยตรง", discuss: "ปรึกษาการประยุกต์ใช้",
       items: [["01", "ศูนย์ข้อมูล", "ระบบสำรองและบริหารความเย็นสำหรับสถานที่ที่ทุกนาทีของการทำงานมีความหมาย", "ภารกิจสำคัญ"], ["02", "สาธารณสุขและชีววิทยาศาสตร์", "ระบบความเย็นที่มั่นคงขึ้นสำหรับโรงพยาบาล ห้องปฏิบัติการ และงานที่ไวต่ออุณหภูมิ", "ความต่อเนื่อง"], ["03", "อาคารและโครงการขนาดใหญ่", "บริหารโหลดช่วงพีกสำหรับอาคารขนาดใหญ่ โครงการมิกซ์ยูส และสินทรัพย์เมืองความหนาแน่นสูง", "ระดับพอร์ตโฟลิโอ"], ["04", "อุตสาหกรรมและโครงสร้างพื้นฐาน", "ระบบกักเก็บแบบโมดูลาร์สำหรับโรงงานที่ต้องสมดุลโหลดการผลิต ข้อจำกัดโครงข่าย และการขยายกำลัง", "ควบคุมการปฏิบัติการ"]],
     },
     architecture: {
-      kicker: "05 — สถาปัตยกรรมแพลตฟอร์ม", title: <>เทคโนโลยีระดับโลก<br /><em>การดำเนินการในประเทศไทย</em></>,
-      copy: "BOCA เป็นชั้นเทคโนโลยี PCM-TES ส่วน Ecopulse สร้างชั้นการดำเนินงานในไทยและอาเซียน ตั้งแต่การพัฒนาลูกค้า การปรับเทคโนโลยีให้เหมาะกับพื้นที่ การวางโครงสร้างเชิงพาณิชย์ การวัดผล ไปจนถึงการดูแลตลอดอายุระบบ", link: "ดูเทคโนโลยี BOCA",
-      labels: ["ชั้นเทคโนโลยี", "PCM · ออกแบบระบบ · ควบคุม", "การส่งมอบแบบบูรณาการ", "ชั้นดำเนินการ", "ไทย · อาเซียน"], chips: ["ปรับใช้ในพื้นที่", "วางโครงสร้าง", "วัดและทวนสอบ", "เดินระบบและบำรุงรักษา"],
+      kicker: "06 — สถาปัตยกรรมแพลตฟอร์ม", title: <>เทคโนโลยีระดับโลก<br /><em>การดำเนินการในประเทศไทย</em></>,
+      copy: "BOCA เป็นชั้นเทคโนโลยี PCM-TES และ BocaSmart A.I. ส่วน Ecopulse สร้างชั้นการดำเนินงานในไทยและอาเซียน ตั้งแต่การปรับเทคโนโลยีให้เหมาะกับพื้นที่ การเชื่อมต่อระบบควบคุม การวางโครงสร้างเชิงพาณิชย์ การวัดผล ไปจนถึงการดูแลตลอดอายุระบบ", link: "ดูเทคโนโลยี BOCA",
+      labels: ["ชั้นเทคโนโลยี", "PCM · ออกแบบระบบ · BOCASMART A.I.", "การส่งมอบแบบบูรณาการ", "ชั้นดำเนินการ", "ไทย · อาเซียน"], chips: ["ปรับใช้ในพื้นที่", "เชื่อมต่อ AI / BMS", "วัดและทวนสอบ", "เดินระบบและบำรุงรักษา"],
     },
     delivery: {
-      kicker: "06 — การส่งมอบ", title: <>จากข้อมูลจริงของสถานที่<br />สู่สินทรัพย์ที่ใช้งานได้จริง</>, copy: "ทุกโครงการเริ่มจากข้อมูลโหลดจริง ไม่ใช่คำสัญญาประหยัดพลังงานแบบกว้าง ๆ การตัดสินใจด้านเทคนิคและพาณิชย์ยึดโยงกับข้อมูลหน้างานและกรอบการวัดผลที่ตกลงร่วมกัน",
+      kicker: "07 — การส่งมอบ", title: <>จากข้อมูลจริงของสถานที่<br />สู่สินทรัพย์ที่ใช้งานได้จริง</>, copy: "ทุกโครงการเริ่มจากข้อมูลโหลดจริง ไม่ใช่คำสัญญาประหยัดพลังงานแบบกว้าง ๆ การตัดสินใจด้านเทคนิคและพาณิชย์ยึดโยงกับข้อมูลหน้างานและกรอบการวัดผลที่ตกลงร่วมกัน",
       items: [["01", "วิเคราะห์", "ทำแผนที่โหลดความเย็น รูปแบบการเดินระบบ ความเสี่ยงค่าไฟ และความต้องการด้านความต่อเนื่อง"], ["02", "ออกแบบ", "กำหนดสถาปัตยกรรมการกักเก็บด้วย BOCA PCM-TES และระบบควบคุมเฉพาะพื้นที่"], ["03", "วางโครงสร้าง", "จัดแนวขอบเขตวิศวกรรม โมเดลเชิงพาณิชย์ แผนวัดผล และความรับผิดชอบของทุกฝ่าย"], ["04", "เดินระบบ", "ติดตามผลด้วยการตรวจวัด การทวนสอบ และการสนับสนุนตลอดอายุโครงการ"]],
     },
     references: {
-      kicker: "07 — โครงการอ้างอิงของเทคโนโลยี", title: <>รากฐานที่พิสูจน์แล้ว<br />นอกห้องทดลอง</>, copy: "โครงการที่ BOCA เผยแพร่แสดงการประยุกต์ PCM-TES ทั้งด้านความต่อเนื่องของระบบความเย็น การจัดการพลังงาน และการกักเก็บพลังงานความร้อน",
+      kicker: "08 — โครงการอ้างอิงของเทคโนโลยี", title: <>รากฐานที่พิสูจน์แล้ว<br />นอกห้องทดลอง</>, copy: "โครงการที่ BOCA เผยแพร่แสดงการประยุกต์ PCM-TES ทั้งด้านความต่อเนื่องของระบบความเย็น การจัดการพลังงาน และการกักเก็บพลังงานความร้อน",
       items: [["ฮ่องกง", "ศูนย์ข้อมูล IBM", "ความเย็นต่อเนื่องขนาด 130 RT-hr", "https://pcm-tes.com/ibm-2/"], ["อิตาลี", "Turin Geothermal TES", "กักเก็บพลังงานทั้งความเย็นและความร้อน", "https://pcm-tes.com/italy/"], ["ฮ่องกง", "โรงงานชิลเลอร์ HAECO", "โครงการอ้างอิงที่ BOCA เผยแพร่", "https://pcm-tes.com/most-energy-efficient-hvac-system-2/"]],
       note: "โครงการอ้างอิงเป็นผลงานที่ BOCA International ระบุไว้ และไม่ใช่โครงการของ Ecopulse ผลลัพธ์จริงขึ้นอยู่กับแต่ละสถานที่ และต้องยืนยันด้วยการออกแบบ การกำหนดค่าฐาน และการวัดและทวนสอบเฉพาะโครงการ",
     },
@@ -148,13 +176,13 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Ecopulse Technology home"><BrandMark /><span className="brand-wordmark"><strong>Ecopulse</strong><small>TECHNOLOGY</small></span></a>
-        <nav className="desktop-nav" aria-label="Primary navigation"><a href="#platform">{t.nav[0]}</a><a href="#pcm-tes">{t.nav[1]}</a><a href="#applications">{t.nav[2]}</a><a href="#delivery">{t.nav[3]}</a></nav>
+        <nav className="desktop-nav" aria-label="Primary navigation"><a href="#pcm-tes">{t.nav[0]}</a><a href="#intelligence">{t.nav[1]}</a><a href="#applications">{t.nav[2]}</a><a href="#delivery">{t.nav[3]}</a></nav>
         <div className="header-tools"><div className="language-switch" role="group" aria-label="Choose language"><button type="button" className={lang === "th" ? "active" : ""} onClick={() => changeLanguage("th")} aria-pressed={lang === "th"}>TH</button><span>/</span><button type="button" className={lang === "en" ? "active" : ""} onClick={() => changeLanguage("en")} aria-pressed={lang === "en"}>EN</button></div><a className="header-cta" href="https://ecopulsegroup.com/contact" target="_blank" rel="noreferrer">{t.contact} <Arrow /></a></div>
       </header>
 
       <section id="top" className="hero">
         <div className="hero-grid" aria-hidden="true" /><div className="hero-glow hero-glow-one" aria-hidden="true" /><div className="hero-glow hero-glow-two" aria-hidden="true" />
-        <div className="hero-copy"><div className="eyebrow"><span /> {t.eyebrow}</div><h1>{t.heroTitle}</h1><p className="hero-lead">{t.heroLead}</p><div className="hero-actions"><a className="button button-primary" href="#pcm-tes">{t.explore} <Arrow /></a><a className="button button-quiet" href="https://ecopulsegroup.com/investors" target="_blank" rel="noreferrer">{t.investors}</a></div></div>
+        <div className="hero-copy"><div className="eyebrow"><span /> {t.eyebrow}</div><h1>{t.heroTitle}</h1><p className="hero-lead">{t.heroLead}</p><a className="hero-intelligence" href="#intelligence"><span>{t.heroAI[0]}</span><strong>{t.heroAI[1]}</strong><Arrow /></a><div className="hero-actions"><a className="button button-primary" href="#pcm-tes">{t.explore} <Arrow /></a><a className="button button-quiet" href="https://ecopulsegroup.com/investors" target="_blank" rel="noreferrer">{t.investors}</a></div></div>
         <div className="system-visual" aria-label="Integrated thermal energy storage illustration"><div className="visual-label visual-label-top"><span /> THERMAL NETWORK / ACTIVE</div><div className="building-shell"><div className="building-topline" /><div className="building-grid">{Array.from({ length: 24 }).map((_, i) => <i key={i} />)}</div><div className="energy-line energy-line-a" /><div className="energy-line energy-line-b" /><div className="pcm-bank"><span className="pcm-title">PCM · TES</span><div className="pcm-cells">{Array.from({ length: 12 }).map((_, i) => <b key={i} />)}</div><small>THERMAL CAPACITY BANK</small></div></div>{t.visual.map(([number, title, label], index) => <div className={`visual-stat stat-${["one", "two", "three"][index]}`} key={number}><span>{number}</span><strong>{title}</strong><small>{label}</small></div>)}</div>
         <div className="hero-bottom"><p>THERMAL INFRASTRUCTURE COMPANY OF SOUTHEAST ASIA</p><div><span>{t.scroll}</span><i /></div></div>
       </section>
@@ -166,6 +194,17 @@ export default function Home() {
         <figure className="pcm-photo"><Image src="/pcm-tes-industrial-enhanced.jpg" alt={lang === "th" ? "แผง PCM และถังกักเก็บพลังงานความร้อน" : "PCM panels and a thermal energy storage tank"} width={1451} height={1084} sizes="(max-width: 900px) 100vw, 50vw" /><figcaption>{t.pcm.caption}</figcaption><span className="photo-badge">REAL SYSTEM / PCM PANELS</span></figure>
         <div className="pcm-steps">{t.pcm.steps.map(([number, title, body]) => <article key={number}><span>{number}</span><strong>{title}</strong><p>{body}</p></article>)}</div>
         <aside className="temperature-callout"><div><span>{t.pcm.callout}</span><strong>8°C</strong></div><div><h3>{t.pcm.calloutTitle}</h3><p>{t.pcm.calloutCopy}</p></div></aside>
+      </section>
+
+      <section id="intelligence" className="section intelligence-section">
+        <div className="intelligence-heading"><div><div className="section-kicker">{t.ai.kicker}</div><h2>{t.ai.headline}</h2></div><p>{t.ai.intro}</p></div>
+        <div className="ai-loop" aria-label={lang === "th" ? "วงจรการบริหารระบบความเย็นด้วย AI" : "AI-assisted cooling management loop"}>{t.ai.loop.map(([number, title, body], index) => <article key={number}><div className="ai-step-top"><span>{number}</span><i /></div><strong>{title}</strong><p>{body}</p>{index < t.ai.loop.length - 1 && <b aria-hidden="true"><Arrow /></b>}</article>)}</div>
+        <div className="ai-console">
+          <div className="console-copy"><span>{t.ai.console}</span><h3>{t.ai.consoleTitle}</h3><p>{t.ai.consoleCopy}</p><a className="source-link source-link-dark" href="https://pcm-tes.com/bocasmart-ai/" target="_blank" rel="noreferrer">{t.ai.source} <Arrow /></a></div>
+          <div className="console-screen" aria-hidden="true"><div className="console-status"><span>ECOPULSE / INTELLIGENCE LAYER</span><i>LIVE</i></div><div className="console-chart">{Array.from({ length: 18 }).map((_, i) => <b key={i} style={{ height: `${24 + ((i * 17) % 61)}%` }} />)}</div><div className="console-signals">{t.ai.signals.map((signal, index) => <span key={signal}><i />{signal}<b>{["ONLINE", "ACTIVE", "78%", "OPTIMISED", "READY"][index]}</b></span>)}</div></div>
+        </div>
+        <blockquote className="ai-statement">{t.ai.statement}</blockquote>
+        <p className="ai-note">{t.ai.note}</p>
       </section>
 
       <section id="platform" className="section dark-section platform-section"><div className="section-kicker">{t.platform.kicker}</div><div className="split-heading"><h2>{t.platform.title}</h2><div><p className="big-copy">{t.platform.big}</p><p>{t.platform.copy}</p></div></div><div className="risk-grid">{t.platform.risks.map(([number, title, body], index) => <article key={number}><span className="risk-index">{number}</span><div className={`risk-icon ${index === 1 ? "ring-icon" : index === 2 ? "shield-icon" : ""}`}><i /><i /><i /></div><h3>{title}</h3><p>{body}</p></article>)}</div></section>
@@ -182,7 +221,7 @@ export default function Home() {
 
       <section className="cta-section"><div className="cta-glow" aria-hidden="true" /><div className="eyebrow"><span /> {t.cta.eyebrow}</div><h2>{t.cta.title}</h2><p>{t.cta.copy}</p><div className="hero-actions"><a className="button button-primary" href="https://ecopulsegroup.com/contact" target="_blank" rel="noreferrer">{t.cta.primary} <Arrow /></a><a className="button button-quiet" href="https://ecopulsegroup.com/investors" target="_blank" rel="noreferrer">{t.cta.secondary}</a></div></section>
 
-      <footer><div className="footer-brand"><BrandMark /><span className="brand-wordmark"><strong>Ecopulse</strong><small>TECHNOLOGY</small></span><span className="brand-tagline">The Pulse of Clean Power.</span></div><div className="footer-links"><div><span>{t.footer.explore}</span><a href="#platform">{t.nav[0]}</a><a href="#pcm-tes">{t.nav[1]}</a><a href="#applications">{t.nav[2]}</a></div><div><span>{t.footer.connect}</span><a href="https://ecopulsegroup.com/contact" target="_blank" rel="noreferrer">{t.footer.business}</a><a href="https://ecopulsegroup.com/investors" target="_blank" rel="noreferrer">{t.footer.investor}</a><a href="https://pcm-tes.com/boca/" target="_blank" rel="noreferrer">BOCA International</a></div></div><div className="footer-bottom"><span>© 2026 ECOPULSE. ALL RIGHTS RESERVED.</span><span>THAILAND · SOUTHEAST ASIA</span></div></footer>
+      <footer><div className="footer-brand"><BrandMark /><span className="brand-wordmark"><strong>Ecopulse</strong><small>TECHNOLOGY</small></span><span className="brand-tagline">The Pulse of Clean Power.</span></div><div className="footer-links"><div><span>{t.footer.explore}</span><a href="#pcm-tes">{t.nav[0]}</a><a href="#intelligence">{t.nav[1]}</a><a href="#applications">{t.nav[2]}</a></div><div><span>{t.footer.connect}</span><a href="https://ecopulsegroup.com/contact" target="_blank" rel="noreferrer">{t.footer.business}</a><a href="https://ecopulsegroup.com/investors" target="_blank" rel="noreferrer">{t.footer.investor}</a><a href="https://pcm-tes.com/boca/" target="_blank" rel="noreferrer">BOCA International</a></div></div><div className="footer-bottom"><span>© 2026 ECOPULSE. ALL RIGHTS RESERVED.</span><span>THAILAND · SOUTHEAST ASIA</span></div></footer>
     </main>
   );
 }

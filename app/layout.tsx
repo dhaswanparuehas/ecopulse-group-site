@@ -13,10 +13,10 @@ const siteUrl = customDomain
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Ecopulse | PCM-TES Cooling Resilience Infrastructure",
-  description: "A thermal battery that stores cooling—not electricity. PCM-TES infrastructure for mission-critical buildings across Thailand and Southeast Asia.",
-  openGraph: { title: "Ecopulse | The thermal battery for cooling", description: "Store cooling when conditions are favourable. Release it when the building needs it most—powered by BOCA PCM-TES technology.", type: "website", images: [{ url: `${siteUrl}/og-ecopulse.jpg`, width: 1200, height: 630, alt: "Ecopulse PCM-TES cooling resilience infrastructure" }] },
-  twitter: { card: "summary_large_image", title: "Ecopulse | The thermal battery for cooling", description: "Store cooling when conditions are favourable. Release it when the building needs it most—powered by BOCA PCM-TES technology.", images: [`${siteUrl}/og-ecopulse.jpg`] },
+  title: "Ecopulse | AI-Assisted PCM-TES Cooling Infrastructure",
+  description: "PCM-TES stores cooling. AI-assisted control helps sense demand, predict load and coordinate dispatch for mission-critical buildings across Southeast Asia.",
+  openGraph: { title: "Ecopulse | Thermal storage, orchestrated by AI", description: "Store cooling with BOCA PCM-TES. Use AI-assisted control to help predict demand and coordinate when that cooling is charged and dispatched.", type: "website", images: [{ url: `${siteUrl}/og-ecopulse.jpg`, width: 1200, height: 630, alt: "Ecopulse AI-assisted PCM-TES cooling infrastructure" }] },
+  twitter: { card: "summary_large_image", title: "Ecopulse | Thermal storage, orchestrated by AI", description: "PCM-TES stores cooling. AI-assisted control helps predict demand and coordinate dispatch.", images: [`${siteUrl}/og-ecopulse.jpg`] },
   icons: { icon: `${basePath}/ecopulse-mark.png`, shortcut: `${basePath}/ecopulse-mark.png`, apple: `${basePath}/ecopulse-mark.png` },
 };
 
